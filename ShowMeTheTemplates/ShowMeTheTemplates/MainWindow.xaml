@@ -1,15 +1,20 @@
 ﻿<controls:MetroWindow x:Class="ShowMeTheTemplates.MainWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
                       xmlns:converters="http://metro.mahapps.com/winfx/xaml/shared"
+                      xmlns:showMeTheTemplates="clr-namespace:ShowMeTheTemplates"
                       RenderOptions.ClearTypeHint="Enabled"
                       TextOptions.TextFormattingMode="Display"
                       Title="Show Me The Templates v2"
                       Height="500"
                       Width="800"
-                      GlowBrush="{DynamicResource AccentColorBrush}"
-                      WindowStartupLocation="CenterScreen">
+                      EnableDWMDropShadow="True"
+                      WindowStartupLocation="CenterScreen"
+                      mc:Ignorable="d"
+                      d:DataContext="{d:DesignInstance showMeTheTemplates:MainViewModel}">
 
   <controls:MetroWindow.Resources>
 
